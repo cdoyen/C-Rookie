@@ -46,7 +46,7 @@ void insert(Node **nodeptr, Data data)
           }
           else
           {
-#if 1
+#if 0
             printf("schon vorhanden %lu\n", data.phone);
 #endif
           }
