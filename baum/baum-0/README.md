@@ -16,6 +16,7 @@ alle Elemente werden durchlaufen und sortiert mittels `printf` ausgegeben
 * Rekursion
 
 ##TODO
-* Speicherfreigabe der Baumelemente (bedingt durch die prinzipiell unflexible Baumstruktur für sequentielle Aktionen (`free()`) gestaltet sich dies relativ schwierig ohne in UB zu geraten
+* Speicherfreigabe aller Baumelemente am Programmende (bedingt durch die prinzipiell unflexible Baumstruktur für sequentielle Aktionen gestaltet sich dies relativ schwierig ohne in UB zu geraten - was bei einfachen free()-Folgen der Fall sein würde)
 * weitere Baum-Operationen: delete, update, search
+* Gebrauch von Callback-Funktionen
 
