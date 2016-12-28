@@ -12,7 +12,7 @@ alle Elemente werden durchlaufen und sortiert mittels `printf` ausgegeben
 * Strukturkopien `.data = .data`
 * Zeiger und Doppel-Zeiger `*node` `**nodeptr`
 * als enum definierte symbolische Konstante `MAXNAMESIZE`
-* compound literals (flüchtige Objekte von Aggregattypen) `(Data) {}`
+* C99- compound literals (flüchtige Objekte von Aggregattypen) `(Data) {}`
 * Rekursion
 
 ##TODO
