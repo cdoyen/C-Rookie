@@ -1,6 +1,11 @@
 Gegenüber der vorigen Variante enthält das Programm jetzt einen `Memmanager`, der das Reservieren und Freigeben von Speicher übernimmt.  
 Er ist in ein separates C-Modul gekapselt, bestehend aus den Deklarationen in `mem.h` und den Definitionen in `mem.c`.  
-Die Schnittstelle zum main-Hauptmodul wird über `#include "mem.h"`realisiert, der Compiler enthält hierüber alle notwendigen Informationen.  
+Die Schnittstelle zum main-Hauptmodul wird über `#include "mem.h"`realisiert, der Compiler enthält hierüber alle notwendigen Informationen:
+```C
+void *memalloc(Memmanager *mm, size_t size);
+void *memresetlast(Memmanager *mm, size_t size);
+void memfreeall(Memmanager *mm);
+```
 Ein Objekt des Speichermanagers wird 1x am Beginn von `main` definiert und initialisiert:
 ```C
 Memmanager mm = { 0 };
